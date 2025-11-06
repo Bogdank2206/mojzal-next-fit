@@ -1,5 +1,5 @@
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import {Phone, Mail, Clock, MapPin} from "lucide-react";
+import {Card, CardContent} from "@/components/ui/card";
 import exclusiveTraining from "@/assets/exclusive-training.jpg";
 
 const contactInfo = [
@@ -22,7 +22,7 @@ const contactInfo = [
     {
         icon: Clock,
         title: "График работы",
-        details: [{ label: "", value: "Круглосуточно 24/7" }],
+        details: [{label: "", value: "Круглосуточно 24/7"}],
     },
     {
         icon: MapPin,
@@ -31,7 +31,7 @@ const contactInfo = [
             {
                 label: "",
                 value: "Воронежская обл., г. Воронеж, ул. Генерала Лизюкова, 70А, р-н Коминтерновский",
-                href: "https://yandex.ru/maps/-/CDdkbPwn",
+                href: "https://yandex.ru/maps?whatshere%5Bpoint%5D=39.14446951508082%2C51.707636371990944&whatshere%5Bzoom%5D=19.45022&ll=39.14446951508082%2C51.70763637159631&z=19.45022&si=5a2j5r12cy5xkxjgkdqvdxr8c8",
             },
         ],
     },
@@ -45,7 +45,7 @@ const Contacts = () => {
                     <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
                         КОНТАКТЫ
                     </h2>
-                    <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+                    <div className="w-24 h-1 bg-primary mx-auto rounded-full"/>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-12">
@@ -72,8 +72,9 @@ const Contacts = () => {
                                 >
                                     <CardContent className="p-6 text-center">
                                         <div className="mb-4 flex justify-center">
-                                            <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center">
-                                                <Icon className="w-8 h-8 text-primary-foreground" />
+                                            <div
+                                                className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center">
+                                                <Icon className="w-8 h-8 text-primary-foreground"/>
                                             </div>
                                         </div>
                                         <h3 className="text-xl font-bold text-foreground mb-4">
