@@ -31,17 +31,8 @@ const contactInfo = [
 
 const Contacts = () => {
   return (
-    <section id="contacts" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute left-1/4 top-0 w-1/4 h-full opacity-10">
-        <img 
-          src={exclusiveTraining} 
-          alt="" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="contacts" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             КОНТАКТЫ
@@ -49,7 +40,15 @@ const Contacts = () => {
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-12">
+          <div className="lg:col-span-1">
+            <img 
+              src={exclusiveTraining} 
+              alt="Тренировка в приватной атмосфере"
+              className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
+            />
+          </div>
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-8">
           {contactInfo.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -95,6 +94,7 @@ const Contacts = () => {
               </Card>
             );
           })}
+          </div>
         </div>
       </div>
     </section>

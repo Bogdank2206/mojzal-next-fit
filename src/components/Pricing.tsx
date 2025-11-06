@@ -22,17 +22,8 @@ const pricingData = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 bg-secondary relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute left-0 top-0 w-full h-full opacity-5">
-        <img 
-          src={workoutFocus} 
-          alt="" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="pricing" className="py-20 bg-secondary">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             ТАРИФЫ
@@ -42,6 +33,14 @@ const Pricing = () => {
             🔒 <span className="font-semibold text-foreground">Эксклюзивный доступ:</span> после оплаты весь зал принадлежит только вам. 
             Никаких других посетителей, администраторов или персонала — только вы и ваша тренировка.
           </p>
+        </div>
+
+        <div className="mb-12">
+          <img 
+            src={workoutFocus} 
+            alt="Персональная тренировка с полной приватностью"
+            className="w-full h-[400px] object-cover rounded-lg shadow-2xl"
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

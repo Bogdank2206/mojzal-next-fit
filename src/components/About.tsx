@@ -27,17 +27,8 @@ const features = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute right-0 top-0 w-1/3 h-full opacity-10">
-        <img 
-          src={trainingSolo} 
-          alt="" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="about" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             наш клуб
@@ -45,7 +36,15 @@ const About = () => {
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
+          <div className="order-2 lg:order-1">
+            <img 
+              src={trainingSolo} 
+              alt="Эксклюзивная тренировка в приватном зале"
+              className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
+            />
+          </div>
+          <div className="order-1 lg:order-2 grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -69,6 +68,7 @@ const About = () => {
               </Card>
             );
           })}
+          </div>
         </div>
       </div>
     </section>
