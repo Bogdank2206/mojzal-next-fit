@@ -22,6 +22,12 @@ jobs:
         run: npm run build
 
       - name: Deploy
+        run: |
+          ls -la ./dist
+          if [ ! -f "./dist/index.html" ]; then
+            echo "❌ Ошибка: файл dist/index.html не найден!"
+            exit 1
+          fi
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
