@@ -9,13 +9,13 @@ const contactInfo = [
         details: [
             {
                 label: "Телефон",
-                value: "+7 (995) 037-41-55",
-                href: "tel:+79950374155",
+                value: "+7 (920) 211-41-55",
+                href: "tel:+79202114155",
             },
             {
                 label: "Email",
-                value: "mojzal@yandex.ru",
-                href: "mailto:mojzal@yandex.ru",
+                value: "vostorg-77@mail.ru",
+                href: "mailto:vostorg-77@mail.ru",
             },
         ],
     },

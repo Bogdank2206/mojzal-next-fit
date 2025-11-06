@@ -66,11 +66,11 @@ const Header = () => {
 
                     {/* Desktop Phone */}
                     <a
-                        href="tel:+79950374155"
+                        href="tel:+79202114155"
                         className={`hidden md:flex items-center gap-2 ${textColorClass} hover:text-primary transition-colors font-semibold`}
                     >
                         <Phone className="w-5 h-5" />
-                        +7 (995) 037-41-55
+                        +7 (920) 211-41-55
                     </a>
 
                     {/* Mobile Menu Button */}
@@ -111,11 +111,11 @@ const Header = () => {
                                 Контакты
                             </button>
                             <a
-                                href="tel:+79950374155"
+                                href="tel:+79202114155"
                                 className="flex items-center gap-2 text-foreground hover:text-primary transition-colors font-semibold py-2"
                             >
                                 <Phone className="w-5 h-5" />
-                                +7 (995) 037-41-55
+                                +7 (920) 211-41-55
                             </a>
                         </nav>
                     </div>
