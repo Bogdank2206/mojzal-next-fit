@@ -28,8 +28,11 @@ const Hero = () => {
           <br />
           чтобы завтра быть лучше
         </h1>
-        <p className="text-xl md:text-3xl lg:text-4xl text-primary-foreground/90 mb-12 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+        <p className="text-xl md:text-3xl lg:text-4xl text-primary-foreground/90 mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
           Ты заслуживаешь здорового и сильного тела
+        </p>
+        <p className="text-lg md:text-2xl text-primary-foreground/80 mb-12 animate-fade-in-up font-semibold" style={{ animationDelay: "0.3s" }}>
+          🔒 Эксклюзивный доступ — весь зал только для вас
         </p>
         <Button
           onClick={scrollToForm}

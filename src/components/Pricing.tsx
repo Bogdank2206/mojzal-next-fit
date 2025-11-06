@@ -27,7 +27,11 @@ const Pricing = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             ТАРИФЫ
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6" />
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            🔒 <span className="font-semibold text-foreground">Эксклюзивный доступ:</span> после оплаты весь зал принадлежит только вам. 
+            Никаких других посетителей, администраторов или персонала — только вы и ваша тренировка.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

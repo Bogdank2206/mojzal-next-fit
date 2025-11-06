@@ -1,7 +1,12 @@
-import { Dumbbell, Cpu, Target, TrendingUp } from "lucide-react";
+import { Dumbbell, Cpu, Lock, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const features = [
+  {
+    icon: Lock,
+    title: "Полная приватность",
+    description: "Эксклюзивный доступ — только вы в зале, никого больше. Ни посетителей, ни персонала",
+  },
   {
     icon: Dumbbell,
     title: "Тренажерный зал",
@@ -11,11 +16,6 @@ const features = [
     icon: Cpu,
     title: "Современное оборудование",
     description: "Новейшие тренажеры от ведущих мировых производителей спортивного оборудования",
-  },
-  {
-    icon: Target,
-    title: "Мотивация на успех",
-    description: "Дружная атмосфера и поддержка единомышленников помогут достичь ваших целей",
   },
   {
     icon: TrendingUp,
