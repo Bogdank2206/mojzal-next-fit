@@ -5,17 +5,17 @@ const pricingData = [
   {
     title: "1 гость",
     slots: [
-      { time: "Утро", hours: "0:00-7:30", price: "400 ₽" },
-      { time: "День", hours: "11:30-16:30", price: "350 ₽" },
-      { time: "Вечер", hours: "18:00-22:30", price: "350 ₽" },
+      { time: "Утро", hours: "0:00-7:30", price: "700 ₽" },
+      { time: "День", hours: "11:30-16:30", price: "900 ₽" },
+      { time: "Вечер", hours: "18:00-22:30", price: "1100 ₽" },
     ],
   },
   {
     title: "До 3-х гостей",
     slots: [
-      { time: "Утро", hours: "0:00-7:30", price: "600 ₽" },
-      { time: "День", hours: "11:30-16:30", price: "550 ₽" },
-      { time: "Вечер", hours: "18:00-22:30", price: "550 ₽" },
+      { time: "Утро", hours: "0:00-7:30", price: "1000 ₽" },
+      { time: "День", hours: "11:30-16:30", price: "1350 ₽" },
+      { time: "Вечер", hours: "18:00-22:30", price: "1700 ₽" },
     ],
   },
 ];
