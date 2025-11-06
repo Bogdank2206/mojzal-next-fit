@@ -1,5 +1,6 @@
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import exclusiveTraining from "@/assets/exclusive-training.jpg";
 
 const contactInfo = [
   {
@@ -30,8 +31,17 @@ const contactInfo = [
 
 const Contacts = () => {
   return (
-    <section id="contacts" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="contacts" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute left-1/4 top-0 w-1/4 h-full opacity-10">
+        <img 
+          src={exclusiveTraining} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             КОНТАКТЫ

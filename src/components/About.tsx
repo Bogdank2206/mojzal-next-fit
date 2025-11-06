@@ -1,5 +1,6 @@
 import { Dumbbell, Cpu, Lock, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import trainingSolo from "@/assets/training-solo.jpg";
 
 const features = [
   {
@@ -26,8 +27,17 @@ const features = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute right-0 top-0 w-1/3 h-full opacity-10">
+        <img 
+          src={trainingSolo} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             наш клуб

@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import workoutFocus from "@/assets/workout-focus.jpg";
 
 const pricingData = [
   {
@@ -21,8 +22,17 @@ const pricingData = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
+    <section id="pricing" className="py-20 bg-secondary relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute left-0 top-0 w-full h-full opacity-5">
+        <img 
+          src={workoutFocus} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 uppercase">
             ТАРИФЫ
